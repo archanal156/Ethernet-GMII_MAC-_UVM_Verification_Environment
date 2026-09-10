@@ -1,0 +1,13 @@
+*.log
+*.key
+*.vpd
+*.fsdb
+*.vcd
+csrc/
+simv*
+ucli.key
+vc_hdrs.h
+DVEfiles/
+urgReport/
+.vlogan*
+.vcs*
