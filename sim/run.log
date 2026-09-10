@@ -1,0 +1,88 @@
+UVM_INFO @ 0: reporter [RNTST] Running test mac_directed_test...
+UVM_INFO mac_directed_seq.sv(17) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO mac_directed_seq.sv(18) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ] STARTING TESTCASE 1: Running 5 Standard Loopback Packets
+UVM_INFO mac_directed_seq.sv(19) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO gmii_scoreboard.sv(36) @ 0: uvm_test_top.env.scb [SCB] Queuing Valid TX Frame for Loopback Check (Payload Size: 758)
+UVM_INFO gmii_driver.sv(34) @ 0: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=758
+UVM_INFO gmii_monitor.sv(35) @ 6284: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 784 Bytes
+UVM_INFO gmii_scoreboard.sv(53) @ 6284: uvm_test_top.env.scb [SCB] PASS: Loopback Frame Payload Matched! Size: 758 Bytes
+UVM_INFO mac_directed_seq.sv(28) @ 6372: uvm_test_top.env.agent.seqr@@seq [SEQ] -> Sent Loopback Packet 1/5 (Payload Size: 758 Bytes)
+UVM_INFO gmii_scoreboard.sv(36) @ 6372: uvm_test_top.env.scb [SCB] Queuing Valid TX Frame for Loopback Check (Payload Size: 391)
+UVM_INFO gmii_driver.sv(34) @ 6372: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=391
+UVM_INFO gmii_monitor.sv(35) @ 9724: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 417 Bytes
+UVM_INFO gmii_scoreboard.sv(53) @ 9724: uvm_test_top.env.scb [SCB] PASS: Loopback Frame Payload Matched! Size: 391 Bytes
+UVM_INFO mac_directed_seq.sv(28) @ 9812: uvm_test_top.env.agent.seqr@@seq [SEQ] -> Sent Loopback Packet 2/5 (Payload Size: 391 Bytes)
+UVM_INFO gmii_scoreboard.sv(36) @ 9812: uvm_test_top.env.scb [SCB] Queuing Valid TX Frame for Loopback Check (Payload Size: 954)
+UVM_INFO gmii_driver.sv(34) @ 9812: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=954
+UVM_INFO gmii_monitor.sv(35) @ 17668: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 980 Bytes
+UVM_INFO gmii_scoreboard.sv(53) @ 17668: uvm_test_top.env.scb [SCB] PASS: Loopback Frame Payload Matched! Size: 954 Bytes
+UVM_INFO mac_directed_seq.sv(28) @ 17756: uvm_test_top.env.agent.seqr@@seq [SEQ] -> Sent Loopback Packet 3/5 (Payload Size: 954 Bytes)
+UVM_INFO gmii_scoreboard.sv(36) @ 17756: uvm_test_top.env.scb [SCB] Queuing Valid TX Frame for Loopback Check (Payload Size: 95)
+UVM_INFO gmii_driver.sv(34) @ 17756: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=95
+UVM_INFO gmii_monitor.sv(35) @ 18740: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 121 Bytes
+UVM_INFO gmii_scoreboard.sv(53) @ 18740: uvm_test_top.env.scb [SCB] PASS: Loopback Frame Payload Matched! Size: 95 Bytes
+UVM_INFO mac_directed_seq.sv(28) @ 18828: uvm_test_top.env.agent.seqr@@seq [SEQ] -> Sent Loopback Packet 4/5 (Payload Size: 95 Bytes)
+UVM_INFO gmii_scoreboard.sv(36) @ 18828: uvm_test_top.env.scb [SCB] Queuing Valid TX Frame for Loopback Check (Payload Size: 1425)
+UVM_INFO gmii_driver.sv(34) @ 18828: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=1425
+UVM_INFO gmii_monitor.sv(35) @ 30452: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 1451 Bytes
+UVM_INFO gmii_scoreboard.sv(53) @ 30452: uvm_test_top.env.scb [SCB] PASS: Loopback Frame Payload Matched! Size: 1425 Bytes
+UVM_INFO mac_directed_seq.sv(28) @ 30540: uvm_test_top.env.agent.seqr@@seq [SEQ] -> Sent Loopback Packet 5/5 (Payload Size: 1425 Bytes)
+UVM_INFO mac_directed_seq.sv(32) @ 30540: uvm_test_top.env.agent.seqr@@seq [SEQ] >>> TESTCASE 1 PASSED: All loopback bringup packets completed.
+
+UVM_INFO mac_directed_seq.sv(37) @ 30540: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO mac_directed_seq.sv(38) @ 30540: uvm_test_top.env.agent.seqr@@seq [SEQ] STARTING TESTCASE 2: Missing SOP Fault Injection Scenario
+UVM_INFO mac_directed_seq.sv(39) @ 30540: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO gmii_scoreboard.sv(32) @ 30540: uvm_test_top.env.scb [SCB] Captured Faulty TX Frame (Corrupt_SOP=1, Corrupt_EOP=0, Size=423). Expecting DUT error flag.
+UVM_INFO gmii_driver.sv(34) @ 30540: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=1, Corrupt_EOP=0, Payload_Size=423
+UVM_INFO gmii_driver.sv(47) @ 30540: uvm_test_top.env.agent.drv [DRV] Injecting MISSING SOP Scenario...
+UVM_INFO gmii_monitor.sv(35) @ 34084: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 441 Bytes
+UVM_INFO mac_directed_seq.sv(43) @ 34172: uvm_test_top.env.agent.seqr@@seq [SEQ] >>> TESTCASE 2 PASSED: Missing SOP condition verified and completed.
+
+UVM_INFO mac_directed_seq.sv(48) @ 34172: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO mac_directed_seq.sv(49) @ 34172: uvm_test_top.env.agent.seqr@@seq [SEQ] STARTING TESTCASE 3: Missing EOP Fault Injection Scenario
+UVM_INFO mac_directed_seq.sv(50) @ 34172: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO gmii_scoreboard.sv(32) @ 34172: uvm_test_top.env.scb [SCB] Captured Faulty TX Frame (Corrupt_SOP=0, Corrupt_EOP=1, Size=213). Expecting DUT error flag.
+UVM_INFO gmii_driver.sv(34) @ 34172: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=1, Payload_Size=213
+UVM_INFO gmii_driver.sv(66) @ 36084: uvm_test_top.env.agent.drv [DRV] Injecting MISSING EOP Scenario (TX_EN stays high)...
+UVM_INFO mac_directed_seq.sv(54) @ 36188: uvm_test_top.env.agent.seqr@@seq [SEQ] >>> TESTCASE 3 PASSED: Missing EOP condition verified and completed.
+
+UVM_INFO mac_directed_seq.sv(59) @ 36188: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO mac_directed_seq.sv(60) @ 36188: uvm_test_top.env.agent.seqr@@seq [SEQ] STARTING TESTCASE 4: Undersized Packet Corner-Case Scenario
+UVM_INFO mac_directed_seq.sv(61) @ 36188: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO gmii_scoreboard.sv(32) @ 36188: uvm_test_top.env.scb [SCB] Captured Faulty TX Frame (Corrupt_SOP=0, Corrupt_EOP=0, Size=9). Expecting DUT error flag.
+UVM_INFO gmii_driver.sv(34) @ 36188: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=9
+UVM_INFO gmii_monitor.sv(35) @ 36484: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 287 Bytes
+UVM_INFO mac_directed_seq.sv(65) @ 36572: uvm_test_top.env.agent.seqr@@seq [SEQ] >>> TESTCASE 4 PASSED: Undersized packet scenario verified and completed.
+
+UVM_INFO mac_directed_seq.sv(70) @ 36572: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO mac_directed_seq.sv(71) @ 36572: uvm_test_top.env.agent.seqr@@seq [SEQ] STARTING TESTCASE 5: Oversized Packet Corner-Case Scenario
+UVM_INFO mac_directed_seq.sv(72) @ 36572: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO gmii_scoreboard.sv(32) @ 36572: uvm_test_top.env.scb [SCB] Captured Faulty TX Frame (Corrupt_SOP=0, Corrupt_EOP=0, Size=1533). Expecting DUT error flag.
+UVM_INFO gmii_driver.sv(34) @ 36572: uvm_test_top.env.agent.drv [DRV] Driving Frame: Corrupt_SOP=0, Corrupt_EOP=0, Payload_Size=1533
+UVM_INFO gmii_monitor.sv(35) @ 49060: uvm_test_top.env.agent.mon [MON] Captured Raw Frame Size: 1559 Bytes
+UVM_INFO mac_directed_seq.sv(76) @ 49148: uvm_test_top.env.agent.seqr@@seq [SEQ] >>> TESTCASE 5 PASSED: Oversized packet scenario verified and completed.
+
+UVM_INFO mac_directed_seq.sv(78) @ 49148: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO mac_directed_seq.sv(79) @ 49148: uvm_test_top.env.agent.seqr@@seq [SEQ] ALL DIRECTED TESTCASES COMPLETED SUCCESSFULLY!
+UVM_INFO mac_directed_seq.sv(80) @ 49148: uvm_test_top.env.agent.seqr@@seq [SEQ] ==========================================================
+UVM_INFO /apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 50148: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO gmii_scoreboard.sv(64) @ 50148: uvm_test_top.env.scb [SCB] ==================================================
+UVM_INFO gmii_scoreboard.sv(65) @ 50148: uvm_test_top.env.scb [SCB]  VERIFICATION SUMMARY: Matches=5, Mismatches=0, Handled Faults=4
+UVM_INFO gmii_scoreboard.sv(67) @ 50148: uvm_test_top.env.scb [SCB] ==================================================
+UVM_INFO gmii_scoreboard.sv(72) @ 50148: uvm_test_top.env.scb [SCB] TEST PASSED: End-to-end data integrity verified successfully!
+UVM_INFO /apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-1.2/src/base/uvm_report_server.svh(904) @ 50148: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   68
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]    11
+[MON]     8
+[RNTST]     1
+[SCB]    18
+[SEQ]    28
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
