@@ -6,7 +6,7 @@
 ../gmii_monitor.sv
 ../gmii_scoreboard.sv
 ../gmii_agent.sv
-../gmii_env.sv
+../ethernet_env.sv
 ../mac_directed_seq.sv
 ../mac_directed_test.sv
 ../tb_top.sv
