@@ -1,5 +1,5 @@
 // ============================================================================
-// 1. GMII INTERFACE
+// GMII INTERFACE
 // ============================================================================
 interface gmii_if (input logic gtx_clk, input logic rx_clk, input logic rst_n);
   // TX Side (MAC to PHY / Loopback)
