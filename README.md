@@ -31,6 +31,7 @@ The environment features end-to-end data integrity validation using an in-order 
                             +------------------------------------+
                             |              MAC DUT               |
                             +------------------------------------+
+```
 
 ## Test Scenarios & Execution Flow
 
