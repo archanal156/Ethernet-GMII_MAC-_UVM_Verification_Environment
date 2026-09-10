@@ -1,5 +1,5 @@
 // ============================================================================
-// 2. SYNTHESIZABLE DUMMY DUT: ETHERNET MAC WITH GMII LOOPBACK & ERROR DETECT
+// SYNTHESIZABLE DUMMY DUT: ETHERNET MAC WITH GMII LOOPBACK & ERROR DETECT
 // ============================================================================
 module ethernet_mac_dut (
   input  logic        gtx_clk,
