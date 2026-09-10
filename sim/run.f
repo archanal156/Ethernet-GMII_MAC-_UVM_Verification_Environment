@@ -1,0 +1,12 @@
++incdir+../
+../design.sv
+../gmii_if.sv
+../ethernet_frame.sv
+../gmii_driver.sv
+../gmii_monitor.sv
+../gmii_scoreboard.sv
+../gmii_agent.sv
+../gmii_env.sv
+../mac_directed_seq.sv
+../mac_directed_test.sv
+../tb_top.sv
