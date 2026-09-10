@@ -1,5 +1,5 @@
 // ============================================================================
-// 3. UVM SEQUENCE ITEM (ETHERNET FRAME TRANSACTION)
+// UVM SEQUENCE ITEM (ETHERNET FRAME TRANSACTION)
 // ============================================================================
 class ethernet_frame extends uvm_sequence_item;
   // Preamble & SFD
